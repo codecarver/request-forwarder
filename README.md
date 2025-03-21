@@ -38,14 +38,16 @@ A Java-based application that forwards incoming HTTP GET requests to multiple ba
 ## Setup
 
 1. Clone the Repository:
+   ```
    Run the following command to clone the repository:
    git clone https://github.com/codecarver/request-forwarder.git
    cd request-forwarder
-
+   ```
 2. Build the Project:
+   ```
    Build the project using Maven:
    mvn clean install
-
+   ```
 3. Configure Backend Servers:
    Edit the application.properties file in the src/main/resources directory to specify the backend servers and server port:
    ```
@@ -58,13 +60,17 @@ A Java-based application that forwards incoming HTTP GET requests to multiple ba
    
 5. Run the Application:
    Run the application using the following command:
+   ```
    java -jar target/request-forwarder.jar
+   ```
 
 ---
 
 ## Usage
 Send a GET request to the application:
+```
 curl "http://localhost:8080/resource?param1=value1&param2=value2"
+```
 
 The application will:
 1. Log the request details.
