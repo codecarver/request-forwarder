@@ -14,9 +14,8 @@ A Java-based application that forwards incoming HTTP GET requests to multiple ba
 7. [Dependencies](#dependencies)
 8. [Project Structure](#project-structure)
 9. [Contributing](#contributing)
-10. [License](#license)
-11. [Author](#author)
-12. [Acknowledgments](#acknowledgments)
+10. [Author](#author)
+11. [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -134,11 +133,6 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes (git commit -m 'Add some feature').
 4. Push to the branch (git push origin feature/your-feature).
 5. Open a pull request.
-
----
-
-## License <a name="license"></a>
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
