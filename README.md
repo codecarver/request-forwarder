@@ -19,7 +19,7 @@ Features
 Prerequisites
 -------------
 
-- **Java 11 or later**.
+- **Java 8 or later**.
 - **Maven 3.x or later**.
 
 ---
@@ -158,7 +158,7 @@ This project is licensed under the MIT License. See the `LICENSE <LICENSE>`_ fil
 Author
 ------
 
-`Your Name <https://github.com/codecarver>`_
+`Siwi Arie Widadi <https://github.com/codecarver>`_
 
 ---
 
