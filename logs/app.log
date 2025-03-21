@@ -1,0 +1,48 @@
+2025-03-22 03:17:07 INFO  com.example.RequestForwarder - Loaded configuration: server.port=8080, backend.servers=[http://localhost:8084/fwd1, http://localhost:8084/fwd2]
+2025-03-22 03:17:07 INFO  com.example.RequestForwarder - Request forwarder started on port 8080
+2025-03-22 03:18:25 INFO  com.example.RequestForwarder - Loaded configuration: server.port=8080, backend.servers=[http://localhost:8084/fwd1, http://localhost:8084/fwd2]
+2025-03-22 03:18:25 INFO  com.example.RequestForwarder - Request forwarder started on port 8080
+2025-03-22 03:19:10 INFO  com.example.RequestForwarder - [29fac8c4-ddb9-4398-b332-b19b98f39a87] Received GET request: path=/resource, queryParams=param1=value1&param2=value2
+2025-03-22 03:19:10 INFO  com.example.RequestForwarder - [29fac8c4-ddb9-4398-b332-b19b98f39a87] Forwarding GET request to http://localhost:8084/fwd1/resource?param1=value1&param2=value2
+2025-03-22 03:19:10 INFO  com.example.RequestForwarder - [29fac8c4-ddb9-4398-b332-b19b98f39a87] Forwarding GET request to http://localhost:8084/fwd2/resource?param1=value1&param2=value2
+2025-03-22 03:19:10 INFO  com.example.RequestForwarder - [29fac8c4-ddb9-4398-b332-b19b98f39a87] Response from http://localhost:8084/fwd2/resource?param1=value1&param2=value2: status=404, body=<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /fwd2/resource</pre>
+</body>
+</html>
+
+2025-03-22 03:19:10 INFO  com.example.RequestForwarder - [29fac8c4-ddb9-4398-b332-b19b98f39a87] Response from http://localhost:8084/fwd1/resource?param1=value1&param2=value2: status=404, body=<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /fwd1/resource</pre>
+</body>
+</html>
+
+2025-03-22 03:20:25 INFO  com.example.RequestForwarder - Loaded configuration: server.port=8080, backend.servers=[http://localhost:8084/fwd1, http://localhost:8084/fwd2]
+2025-03-22 03:20:25 INFO  com.example.RequestForwarder - Request forwarder started on port 8080
+2025-03-22 03:20:32 INFO  com.example.RequestForwarder - [150ed256-b2cc-4511-892d-76175a9778a3] Received GET request: path=/resource, queryParams=param1=value1&param2=value2
+2025-03-22 03:20:32 INFO  com.example.RequestForwarder - [150ed256-b2cc-4511-892d-76175a9778a3] Forwarding GET request to http://localhost:8084/fwd1?param1=value1&param2=value2
+2025-03-22 03:20:32 INFO  com.example.RequestForwarder - [150ed256-b2cc-4511-892d-76175a9778a3] Forwarding GET request to http://localhost:8084/fwd2?param1=value1&param2=value2
+2025-03-22 03:20:32 INFO  com.example.RequestForwarder - [150ed256-b2cc-4511-892d-76175a9778a3] Response from http://localhost:8084/fwd2?param1=value1&param2=value2: status=200, body=OK2
+2025-03-22 03:20:32 INFO  com.example.RequestForwarder - [150ed256-b2cc-4511-892d-76175a9778a3] Response from http://localhost:8084/fwd1?param1=value1&param2=value2: status=200, body=OK
+2025-03-22 03:22:21 INFO  com.example.RequestForwarder - [aa6c0d72-dd8a-4051-9aba-3a7f3570e170] Received GET request: path=/resource, queryParams=param1=value1&param2=value2
+2025-03-22 03:22:21 INFO  com.example.RequestForwarder - [aa6c0d72-dd8a-4051-9aba-3a7f3570e170] Forwarding GET request to http://localhost:8084/fwd1?param1=value1&param2=value2
+2025-03-22 03:22:21 INFO  com.example.RequestForwarder - [aa6c0d72-dd8a-4051-9aba-3a7f3570e170] Forwarding GET request to http://localhost:8084/fwd2?param1=value1&param2=value2
+2025-03-22 03:22:21 ERROR com.example.RequestForwarder - [aa6c0d72-dd8a-4051-9aba-3a7f3570e170] Failed to forward GET request to http://localhost:8084/fwd1?param1=value1&param2=value2: Connect to localhost:8084 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2025-03-22 03:22:21 ERROR com.example.RequestForwarder - [aa6c0d72-dd8a-4051-9aba-3a7f3570e170] Failed to forward GET request to http://localhost:8084/fwd2?param1=value1&param2=value2: Connect to localhost:8084 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2025-03-22 03:24:31 INFO  com.example.RequestForwarder - Loaded configuration: server.port=8080, backend.servers=[http://localhost:8084/fwd1, http://localhost:8084/fwd2]
+2025-03-22 03:24:31 INFO  com.example.RequestForwarder - Request forwarder started on port 8080
+2025-03-22 03:24:34 INFO  com.example.RequestForwarder - [5e785cf9-c6e8-469c-a520-632babca61fc] Received GET request: path=/resource, queryParams=param1=value1&param2=value2
+2025-03-22 03:24:35 INFO  com.example.RequestForwarder - [5e785cf9-c6e8-469c-a520-632babca61fc] Forwarding GET request to http://localhost:8084/fwd2?param1=value1&param2=value2
+2025-03-22 03:24:35 INFO  com.example.RequestForwarder - [5e785cf9-c6e8-469c-a520-632babca61fc] Forwarding GET request to http://localhost:8084/fwd1?param1=value1&param2=value2
+2025-03-22 03:24:35 ERROR com.example.RequestForwarder - [5e785cf9-c6e8-469c-a520-632babca61fc] Failed to forward GET request to http://localhost:8084/fwd2?param1=value1&param2=value2: Connect to localhost:8084 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2025-03-22 03:24:35 ERROR com.example.RequestForwarder - [5e785cf9-c6e8-469c-a520-632babca61fc] Failed to forward GET request to http://localhost:8084/fwd1?param1=value1&param2=value2: Connect to localhost:8084 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
