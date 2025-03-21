@@ -5,22 +5,22 @@ A Java-based application that forwards incoming HTTP GET requests to multiple ba
 ---
 
 ## Table of Contents
-1. Features
-2. Prerequisites
-3. Setup
-4. Usage
-5. Logs
-6. Configuration
-7. Dependencies
-8. Project Structure
-9. Contributing
-10. License
-11. Author
-12. Acknowledgments
+1. [Features](#features)
+2. [Prerequisites](#prerequisites)
+3. [Setup](#setup)
+4. [Usage](#usage)
+5. [Logs](#logs)
+6. [Configuration](#configuration)
+7. [Dependencies](#dependencies)
+8. [Project Structure](#project-structure)
+9. [Contributing](#contributing)
+10. [License](#license)
+11. [Author](#author)
+12. [Acknowledgments](#acknowledgments)
 
 ---
 
-## Features
+## Features <a name="features"></a>
 - Forwards incoming HTTP GET requests to multiple backend servers.
 - Logs requests and responses to both the console and a daily rolling log file.
 - Configurable backend servers and server port via application.properties.
@@ -29,13 +29,13 @@ A Java-based application that forwards incoming HTTP GET requests to multiple ba
 
 ---
 
-## Prerequisites
+## Prerequisites <a name="prerequisites"></a>
 - Java 11 or later.
 - Maven 3.x or later.
 
 ---
 
-## Setup
+## Setup <a name="setup"></a>
 
 1. Clone the Repository:
    ```
@@ -66,7 +66,7 @@ A Java-based application that forwards incoming HTTP GET requests to multiple ba
 
 ---
 
-## Usage
+## Usage <a name="usages"></a>
 Send a GET request to the application:
 ```
 curl "http://localhost:8080/resource?param1=value1&param2=value2"
@@ -80,14 +80,14 @@ The application will:
 
 ---
 
-## Logs
+## Logs <a name="logs"></a>
 - Logs are written to the logs/app.log file in the project directory.
 - Logs are also printed to the console (sysout).
 - Log files are rolled daily, and old logs are kept for 30 days.
 
 ---
 
-## Configuration
+## Configuration <a name="configuration"></a>
 application.properties:
 - server.port: The port on which the application listens for incoming requests.
 - backend.servers: A comma-separated list of backend server URLs.
@@ -97,7 +97,7 @@ logback.xml:
 
 ---
 
-## Dependencies
+## Dependencies <a name="dependencies"></a>
 - Apache HttpClient: For making HTTP requests to backend servers.
 - Logback: For logging requests and responses.
 - SLF4J: Logging facade.
@@ -105,7 +105,7 @@ logback.xml:
 
 ---
 
-## Project Structure
+## Project Structure <a name="project-structure"></a>
 ```
 request-forwarder/
 ├── src/
@@ -127,7 +127,7 @@ request-forwarder/
 
 ---
 
-## Contributing
+## Contributing <a name="contributing"></a>
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
 2. Create a new branch (git checkout -b feature/your-feature).
@@ -137,17 +137,17 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## License
+## License <a name="license"></a>
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
-## Author
+## Author <a name="author"></a>
 Siwi (https://github.com/codecarver)
 
 ---
 
-## Acknowledgments
+## Acknowledgments <a name="acknowledgments"></a>
 - Apache HttpClient (https://hc.apache.org/httpcomponents-client-ga/)
 - Logback (https://logback.qos.ch/)
 - SLF4J (https://www.slf4j.org/)
